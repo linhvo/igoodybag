@@ -11,13 +11,21 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '',                      # Or path to database file if using sqlite3.
-        'USER': '',                      # Not used with sqlite3.
-        'PASSWORD': '',                  # Not used with sqlite3.
-        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
-    }
+        'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'd667o5g3bjinoe',                      # Or path to database file if using sqlite3.
+        'USER': 'u31nsa8iqfv6ju',                      # Not used with sqlite3.
+        'PASSWORD': 'pakeoe34l0kuej41qpa64f3b3b8',                  # Not used with sqlite3.
+        'HOST': 'ec2-54-235-182-105.compute-1.amazonaws.com',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '5702',                      # Set to empty string for default. Not used with sqlite3.
+    },
+    'mongoDB': {
+      'ENGINE': '', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+      'NAME': '',                      # Or path to database file if using sqlite3.
+      'USER': '',                      # Not used with sqlite3.
+      'PASSWORD': '',                  # Not used with sqlite3.
+      'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
+      'PORT': '',
+      }
 }
 
 # Local time zone for this installation. Choices can be found here:
@@ -109,7 +117,8 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
-    'igoodybag.apps.business'
+    # 'igoodybag.apps.business'
+    # 'south'
     # 'django.contrib.auth',
     # 'django.contrib.contenttypes',
     # 'django.contrib.sessions',
